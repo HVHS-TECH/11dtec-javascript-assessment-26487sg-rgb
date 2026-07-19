@@ -1,26 +1,164 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Cafe</title>
-<link href="style.css" rel="stylesheet">
+
+<title>Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <img src="cafe.png" alt="Logo" style="width:100px; height:100px;">
 
-<h1>Tea</h1>
+<header>
 
+<img src="cafe.png" alt="Logo" class="logo">
 
-<div class="nav">
-    
-    <a href="index.html"> Home</a>
+<h1>Espresso Yourself Cafe</h1>
+</header>
 
-    <a href="menu.html"> Menu</a>
-    
-    
- <a href="cart.html">  Cart</a>
-    
-    </div>
-  
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="cart.html">Cart</a>
+
+</nav>
+
+<h2>Coffee</h2>
+
+<div class="menu">
+
+<div class="item">
+
+<img src="coffee1.jpg" alt="Coffee">
+
+<h3>Creamy Iced Coffee</h3>
+
+<p>$11</p>
+
+Quantity
+
+<input type="number" id="qty1" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(1)">
+Add to Cart
+</button>
+
+</div>
+
+<div class="item">
+
+<img src="coffee2.jpg" alt="Latte">
+
+<h3>Creamy Iced Latte</h3>
+
+<p>$10</p>
+
+Quantity
+
+<input type="number" id="qty2" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(2)">
+Add to Cart
+</button>
+</div>
+
+<div class="item">
+
+<img src="coffee3.jpg" alt="Mocha">
+
+<h3>Creamy Iced Mocha</h3>
+
+<p>$12</p>
+
+Quantity
+
+<input type="number" id="qty3" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(3)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+<h2>Tea</h2>
+
+<div class="menu">
+
+<div class="item">
+
+<img src="tea1.jpg" alt="Milk Tea">
+
+<h3>Milk Tea</h3>
+
+<p>$8</p>
+
+Quantity
+
+<input type="number" id="qty4" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(4)">
+ Add to Cart
+</button>
+
+</div>
+
+<div class="item">
+
+<img src="tea2.jpg" alt="Green Tea">
+
+<h3>Green Tea</h3>
+
+<p>$7</p>
+
+Quantity
+
+<input type="number" id="qty5" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(5)">
+ Add to Cart
+</button>
+
+</div>
+
+<div class="item">
+
+<img src="tea3.jpg" alt="Lemon Tea">
+
+<h3>Lemon Tea</h3>
+
+<p>$9</p>
+
+Quantity
+
+<input type="number" id="qty6" value="1" min="1">
+
+<br><br>
+
+<button onclick="addToCart(6)">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
 <script src="script.js"></script>
 
 </body>

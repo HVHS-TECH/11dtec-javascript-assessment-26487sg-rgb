@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Cafe</title>
-<link href="style.css" rel="stylesheet">
+
+<title>Shopping Cart</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <img src="cafe.png" alt="Logo" style="width:100px; height:100px;">
 
-<h1>Shopping Cart</h1>
+<header>
 
+<img src="cafe.png" alt="Logo" class="logo">
 
-<div class="nav">
-    
-    <a href="index.html"> Home</a>
+<h1>Espresso Yourself Cafe</h1>
 
-    <a href="menu.html"> Menu</a>
-    
-    <a href="cart.html">  Cart</a>
-    
-    </div>
-  
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="menu.html">Menu</a>
+
+<a href="cart.html">Cart</a>
+
+</nav>
+
+<h2>Shopping Cart</h2>
+
+<div class="cart">
+
+<table>
+
+ <tr>
+<th>Drink</th>
+<th>Quantity</th>
+ <th>Price</th>
+</tr>
+
+<tbody id="cartTable">
+
+</tbody>
+</table>
+
+<h3 id="total">  Grand Total: $0</h3>
+
+</div>
+
+<h2>Checkout</h2>
+
+<label>Name</label>
+
+<br>
+
+<input type="text" id="customerName">
+
+<br><br>
+
+<label>Money</label>
+
+<br>
+
+<input type="number" id="money">
+
+<br><br>
+
+<button onclick="placeOrder()">
+
+Place Order
+
+</button>
+
+<button onclick="resetCart()">
+
+Reset Cart
+
+</button>
+
+<h2>Receipt</h2>
+
+<div id="receipt">
+
+</div>
+
 <script src="script.js"></script>
+
+<script>
+
+displayCart();
+</script>
 
 </body>
 
