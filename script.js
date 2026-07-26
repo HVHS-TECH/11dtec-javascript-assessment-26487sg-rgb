@@ -1,24 +1,10 @@
-// Menu Items
-
-let names = [
-    "Creamy Iced Coffee",
-    "Creamy Iced Latte",
-    "Creamy Iced Mocha",
-    "Milk Tea",
-    "Green Tea",
-    "Lemon Tea"
+let names = ["Creamy Iced Coffee","Creamy Iced Latte","Creamy Iced Mocha","Milk Tea","Green Tea","Lemon Tea"
 ];
 
-let prices = [
-    11,
-    10,
-    12,
-    8,
-    7,
-    9
+let prices = [11,10,12,8,7,9
 ];
 
-// Load cart if it already exists
+
 
 let cart = localStorage.getItem("cart");
 
@@ -32,7 +18,7 @@ if(isNaN(total)){
     total = 0;
 }
 
-// Add Item
+
 
 function addToCart(number){
 
@@ -41,6 +27,11 @@ function addToCart(number){
 
     if(quantity < 1){
         alert("Please enter a quantity.");
+        return;
+    }
+
+    if(quantity > 1000){
+        alert("TOO much items.");
         return;
     }
 
@@ -66,7 +57,7 @@ function addToCart(number){
     alert("Item added to cart!");
 }
 
-// Show Cart
+
 
 function displayCart(){
 
@@ -83,8 +74,6 @@ function displayCart(){
 
 }
 
-// Reset Cart
-
 function resetCart(){
 
     cart = "";
@@ -99,7 +88,7 @@ function resetCart(){
 
 }
 
-// Place Order
+
 
 function placeOrder(){
 
