@@ -30,8 +30,8 @@ function addToCart(number){
         return;
     }
 
-    if(quantity > 1000){
-        alert("TOO much items.");
+    if(quantity > 9){
+        alert("TOO much items. No more than 10");
         return;
     }
 
